@@ -1,0 +1,115 @@
+.gallerySection {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.gallerySection h2 {
+  color: rgb(33, 33, 118);
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.galleryContiner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 40px 0;
+  padding-bottom: 30px;
+}
+.galleryCard {
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+.galleryCard img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+.effectItem1 {
+  position: absolute;
+  top: -40%;
+  left: -15%;
+  width: 0;
+  height: 180%;
+  background: #380bff2c;
+  transform: rotate(15deg);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.1;
+  z-index: 10;
+}
+.effectItem3 {
+  position: absolute;
+  top: -40%;
+  left: -15%;
+  width: 0;
+  height: 180%;
+  background: #910bff2b;
+  transform: rotate(-15deg);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.1;
+  z-index: 10;
+}
+.effectItem2 {
+  position: absolute;
+  top: -40%;
+  left: -35%;
+  width: 0;
+  height: 180%;
+  background: #910bff65;
+  transform: rotate(15deg);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.1;
+  z-index: 10;
+}
+.effectItem4 {
+  position: absolute;
+  top: -40%;
+  left: -35%;
+  width: 0;
+  height: 180%;
+  background: #400bd365;
+  transform: rotate(-15deg);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.1;
+  z-index: 10;
+}
+
+.galleryText {
+  position: absolute;
+  left: 5%;
+  bottom: -30%;
+  font-family: sans-serif;
+  color: wheat;
+  z-index: 20;
+  display: flex;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.row {
+  height: 80px;
+  width: 3px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.galleryText h3 {
+  color: rgb(255, 255, 255);
+}
+.galleryCard:hover .effectItem1,
+.galleryCard:hover .effectItem2,
+.galleryCard:hover .effectItem3,
+.galleryCard:hover .effectItem4 {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.galleryCard:hover img {
+  transform: scale(1.08);
+  transition: all 0.3s ease-in-out;
+}
+.galleryCard:hover .galleryText {
+  bottom: 5%;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}

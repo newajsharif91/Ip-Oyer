@@ -1,0 +1,102 @@
+.addservice {
+  width: 100%;
+  background: #ffffff;
+}
+.serviceTitle {
+  text-align: center;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+.serviceTitle h2 {
+  color: rgb(33, 33, 118);
+  font-weight: 600;
+}
+.serviceContainer {
+  max-width: 1180px;
+  margin: auto;
+  padding: 40px 30px;
+  display: grid;
+  gap: 35px;
+  row-gap: 55px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.serviceCard {
+  box-shadow: 0px 0px 25px #00000028;
+  border-radius: 15px;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  z-index: 1000;
+  height: 380px;
+}
+.serviceCard img {
+  border-radius: 10px 10px 0 0;
+  height: 292px;
+}
+.serviceText {
+  padding: 10px 15px;
+  background: #ffffff;
+  border-radius: 0 0 10px 10px;
+  z-index: 1000;
+  height: 90px;
+}
+.serviceText p {
+  line-height: 0;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.serviceText h4 {
+  margin: 10px 0;
+  font-family: sans-serif;
+}
+.serviceButton {
+  text-align: center;
+}
+.serviceButton button {
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid #561ed8;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.serviceButton button span {
+  color: #561ed8;
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.serviceButton button:hover {
+  background: #561ed8;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.serviceButton button:hover span {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+/* animation */
+.styleCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 100%;
+  background: #a831315e;
+  z-index: -10;
+  border-radius: 10px 5px 8px 10px;
+  transition: all 0.4s ease-in-out;
+  background: rgb(34, 83, 195);
+  background: linear-gradient(
+    66deg,
+    rgb(56, 105, 220) 0%,
+    rgb(239, 111, 232) 100%
+  );
+  opacity: 0.6;
+}
+.serviceCard:hover .styleCard {
+  transform: translate(-3px, 17px) rotate(03deg);
+  opacity: 1;
+}
